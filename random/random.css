@@ -27,25 +27,6 @@ html .content span, body .content span {
     width: 40px;
 }
 
-.signature {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.signature a {
-  font-family: sans-serif;
-  font-weight: 100;
-  letter-spacing: 4px;
-  font-size: 10px;
-  width: 100vw;
-  text-align: center;
-  color: #525252;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .presentation {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -55,4 +36,23 @@ html .content span, body .content span {
   color: white;
   text-decoration: none;
   text-transform: none;
+}
+
+.footer {
+   position: absolute;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+}
+
+.footer a {
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-size: 10px;
+  width: 100vw;
+  text-align: center;
+  color: #525252;
+  text-transform: uppercase;
+  text-decoration: none;
 }
