@@ -1,0 +1,3 @@
+[submodule "solar-system"]
+	path = solar-system
+	url = git@github.com:4sStylZ/solar-system.git
