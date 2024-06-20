@@ -1,0 +1,20 @@
+
+@media all and (-ms-high-contrast:none) {
+    /* IE10 */
+    .homehero__video video {
+        height: auto;
+      }
+    /* IE11 */
+    *::-ms-backdrop, .homehero__video video {
+        height: auto;
+      }
+}
+/* EDGE */
+@supports (-ms-ime-align:auto) {
+    .homehero__video video {
+        height: auto;
+      }
+      .homelegends__text {
+          padding: 0rem 2rem 0rem 2rem;
+      }    
+ }
