@@ -6,7 +6,7 @@ $(document).ready(function(){
   var $data = 0;
   var index;
   var change;
-  var letters = ["I", "A", "M", " ", "4", "s", "S", "t", "y", "l", "Z"];
+  var letters = ["I", "A", "M", "4", "s", "S", "t", "y", "l", "Z"];
 
   /**
    * Function to determine a maximum number of loop different for each .nbr
@@ -36,11 +36,7 @@ $(document).ready(function(){
    * @return {int} Location of the character
    */
   function select(){
-    /*console.log('pomme');
-    console.log('.nbr.length = ');
-    console.log($randomnbr.length);*/
-
-    return Math.round(Math.random()*$randomnbr.length+1);
+    return Math.round(Math.random()*$randomnbr.length);
   };
 
   /**
@@ -49,8 +45,8 @@ $(document).ready(function(){
    * @return {[type]} [description]
    */
   function value(){
-    $('.nbr:nth-child('+select()+')').html(''+random()+'');
-    $('.nbr:nth-child('+select()+')').attr('data-number', $data);
+    $('.nbr').eq(select()).html(''+random()+'');;
+    $('.nbr').eq(select()).attr('data-number', $data);
     $data++;
 
     // Iterate on each .nbr items.
