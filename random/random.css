@@ -63,3 +63,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.avatar img {
+    max-width: 100px;
+}
